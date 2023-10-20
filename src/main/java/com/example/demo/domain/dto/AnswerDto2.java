@@ -10,6 +10,6 @@ import lombok.ToString;
 @AllArgsConstructor
 public class AnswerDto2 {
     private Long id;
-//    private ArrayList<> score;
+//    private ArrayList<>
     private Long userId;
 }

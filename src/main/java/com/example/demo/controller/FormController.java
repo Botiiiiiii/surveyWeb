@@ -46,7 +46,7 @@ public class FormController {
     }
 
     @PostMapping("/user/add")
-    public ResponseEntity<UserResponse> addUser(UserRequest dto){
+    public ResponseEntity<UserResponse> addUser(@RequestBody UserRequest dto){
         UserResponse response = userService.add(dto);
             return ResponseEntity.ok().body(response);
     }

@@ -26,7 +26,7 @@ public class Answer {
     @Column(name = "user_id")
     private Long userId;
 
-    public static AnswerDto of(Answer answer){
-        return new AnswerDto(answer.getId(), answer.getScore(), answer.getFormId(), answer.getUserId(),answer.getFormType());
+    public static AnswerDto of(Answer answer) {
+        return new AnswerDto(answer.getId(), answer.getScore(), answer.getFormId(), answer.getUserId(), answer.getFormType());
     }
 }

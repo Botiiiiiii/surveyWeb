@@ -14,7 +14,6 @@ public class AnswerDto {
     private Long formId;
     private Long formType;
     private Long userId;
-
     public Answer toEntity(){
         return new Answer(this.id, this.score,this.formId,this.userId,this.formType);
     }
